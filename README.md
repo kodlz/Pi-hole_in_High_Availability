@@ -96,9 +96,9 @@ sudo vim pihole-gemini
 
 I've edited and removed a few lines from the original pihole-gemini script to have it working correctly in a HA setup.
 
-For the Master/Active server copy/paste this script: https://pastebin.com/qBGRppSG
+For the Master/Active server copy/paste this script: https://pastebin.com/qBGRppSG **pihole-gemini_master_active_script**
 
-For the Backup/Standby server copy/paste this script: https://pastebin.com/CLGw2BrZ
+For the Backup/Standby server copy/paste this script: https://pastebin.com/CLGw2BrZ **pihole-gemini_backup_standby_script**
 
 05) Change the values in the USER-DEFINED VARIABLES section to match your setup.
 
@@ -196,7 +196,7 @@ Change the settings according to your setup.
 ```
 sudo vim /etc/keepalived/keepalived.conf
 ```
-Copy/paste the script: https://pastebin.com/nsBnkShi
+Copy/paste the script: https://pastebin.com/nsBnkShi  **keepalived_master_active_config**
 
 Save and exit the editor.
 
@@ -228,7 +228,7 @@ virtual_ipaddress: this will be the HA IP address.
 ```
 sudo vim /etc/keepalived/keepalived.conf
 ```
-Copy/paste the script: https://pastebin.com/HbdsUc07
+Copy/paste the script: https://pastebin.com/HbdsUc07  **keepalived_backup_standby_config**
 
 Save and exit the editor.
 
