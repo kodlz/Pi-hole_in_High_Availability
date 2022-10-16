@@ -1,0 +1,12 @@
+#!/bin/bash
+# make sure the pihole-gemini script is being run by gravity.sh
+
+GEMINI='su -c /usr/local/bin/pihole-gemini - <gemini user>'
+GRAVITY=/opt/pihole/gravity.sh
+
+TRIGGER=$(sed -e '$!{h;d;}' -e x $GRAVITY)
+if [ "$TRIGGER" != "$GEMINI" ]
+then
+        # insert the gemini commandline before the last line of the script
+        sed -i "$ i$GEMINI" $GRAVITY
+fi
