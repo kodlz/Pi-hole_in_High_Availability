@@ -184,7 +184,7 @@ sudo mkdir /etc/scripts
 
 sudo vim /etc/scripts/chk_ftl
 ```
-Copy/paste the script: https://pastebin.com/npw6tcuk
+Copy/paste the script: https://pastebin.com/npw6tcuk **check_pihole-FTL_service_script**
 
 Save and exit the editor.
 ```
