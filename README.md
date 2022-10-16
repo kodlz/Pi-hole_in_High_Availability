@@ -161,8 +161,11 @@ Try this now and see if everything works as expected. From now on, it will run a
 Important note:
 
 When upgrading to a new version of Pi-hole you will have to repeat step 11 in order to re-enable the pihole-gemini sync.
+or use
+**gemini_chk** shell script that can be called manually (or added to a cron job) to make sure it's there after performing an update to pihole.
+Put it into the /etc/scripts/ directory with the other scripts for keepalived, and run it as root after doing a pihole update.
+If you decide to incorporate this, make sure the variables at the top are correct for the command line (replace the <gemini user> with the username in your implementation) and the gravity script for your installation.
 
- 
 
 #### Tutorial part 2 - create a HA (active/standby) between the 2 Pi-hole machines:
 
