@@ -1,3 +1,5 @@
+#not working with Pihole > v.5.x
+
 # Pi-hole_in_High_Availability
 Run 2 Pi-hole servers in HA (High Availability) &amp; in-sync
 Credits go to: Panja0 https://www.reddit.com/r/pihole/comments/d5056q/tutorial_v2_how_to_run_2_pihole_servers_in_ha/
